@@ -3,7 +3,8 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { test } from "node:test";
 import { fileURLToPath } from "node:url";
-import init, { format } from "../pkg/ruff_fmt_node.js";
+import init, pkg from '../pkg/ruff_fmt_node.js';
+const { format } = pkg;
 
 await init();
 
